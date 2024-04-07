@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+}
+
+/* Header Image Styling */
+header {
+    max-width: 100%;
+    overflow: hidden; /* Ensures the image does not overflow its container */
+}
+
+#headerImage {
+    width: 100%; /* Makes the image responsive to the container width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Ensures the image takes up the entire line */
+    margin: 0 auto; /* Optional: centers the image if it's not full-width */
+}
+
+/* Game Area Styling */
+#gameArea {
+    position: relative;
+    width: 100%; /* Or a specific width, depending on your design */
+    height: 300px; /* Adjust based on your game's design */
+    background-image: url('https://cdn.discordapp.com/attachments/988859570078253127/1226627920211214498/ryant14_artwork_for_a_video_game_of_a_Birds_Eye_angle_of_a_stra_dd3ece4a-50a4-48c0-b570-987f4d1553ac.png?ex=66257545&is=66130045&hm=a2ff89b0a616365ae01cb6c31ac98ce630e0f73691b3747dfa3fd2bfe43a3e90&');
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the background image */
+}
+
+#truck {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100px; /* Adjust based on your image's dimensions */
+    height: 50px; /* Adjust based on your image's dimensions */
+    background-image: url('truck.png'); /* Path to your image */
+    background-size: contain; /* Make sure the image fits the element */
+    background-repeat: no-repeat;
+}
+
+#finishLine {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 20px;
+    background-color: rgb(5, 205, 236);
+    left: 75%; /* Move line to the right but not at the edge */
+}
+
+/* Responsive adjustments, if necessary */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller devices like tablets */
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for even smaller devices like phones */
+    #headerImage {
+        /* Optional: Adjust the height or other properties for small screens */
+    }
+}
